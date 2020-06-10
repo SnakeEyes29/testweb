@@ -8,7 +8,7 @@ if(!$conn)
     die("Error connection: ".sqlsrv_errors());
   }
   echo "Connection to Db: Success!";
-
+}
   $sql= "SELECT * FROM [dbo].[restaurant]";
   $getResults = sqlsrv_query($conn, $sql);
   if ($getResults == FALSE)
